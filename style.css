@@ -143,6 +143,9 @@ header {
     justify-content: space-between;
     max-width: 493px;
 }
+.intro-left-info-block p{
+transition: 1s;
+}
 .intro-left-info-block{
     display: flex;
     align-items: center;
