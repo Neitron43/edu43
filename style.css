@@ -143,9 +143,6 @@ header {
     justify-content: space-between;
     max-width: 493px;
 }
-.intro-left-info-block p{
-transition: 1s;
-}
 .intro-left-info-block{
     display: flex;
     align-items: center;
@@ -167,6 +164,7 @@ transition: 1s;
     line-height: 22px; 
     color: #000000;
     max-width: 105px;
+
 }
 .intro-left-button{
     margin-top: 30px;
@@ -292,12 +290,14 @@ transition: 1s;
     transition: 0.08s;
 }
 .shots {
-    margin-top: -42%;
-    margin-left: -32%;
+    position: absolute;
+    margin-top: -26%;
+    margin-left: -19.5%;
 }
 .big-plus {
-    margin-top: -19%;
-    margin-left: 105%;
+    position: absolute;
+    margin-top: -12%;
+    margin-left: 63%;
 }
 #big-plus {
     animation-name: krest;
@@ -457,4 +457,131 @@ transition: 1s;
     position: absolute;
     margin-top: -33%;
     margin-left: 90%;    
+}
+.button-back{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 140px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(196, 196, 196, 0.3);
+    border-radius: 100px;
+    transition: 0.5s;
+}
+.button-back a{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;   
+    color: #303030;
+    margin-left: 10px;
+}
+.button-back:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.button-back:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.08s;
+}
+.vyz-main {
+    margin-top: 25px;
+}
+.vyz-main-header p{
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #D0D0D0;
+}
+.vyz-main-block {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+.vyz-main-block-text{
+    margin-left: 30px;
+
+}
+.vyz-main-block-text p{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #303030;
+}
+.vyz-main-block-text-info {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 540px;
+}
+.vyz-main-block-text-info-box {
+    display: flex;
+    width: 232px;
+    height: 78px;
+    align-items: center;
+    margin-right: 25px;
+}
+.vyz-main-block-text-info-box span{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 78px;
+    color: #F46A6A;
+    margin-right: 5px;
+}
+.vyz-main-block-text-info-box p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px; 
+    color: #000000;
+    max-width: 105px;
+
+}
+.vyz-shoots {
+    position: absolute;
+}
+.vyz-big-plus {
+    position: absolute;
+    margin-left: 78%;
+    margin-top: 7%;
+}
+.vyz-small-plus {
+    position: absolute;
+    margin-left: 76%;
+    margin-top: 19%;
+}
+.vyz-secondary{
+    margin-top: 140px;
+}
+.vyz-secondary-header h2{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: #303030;
+}
+.vyz-secondary-info{
+    display: flex;
+    margin-top: 40px;
+}
+.vyz-secondary-info-1{
+    margin-right: 30px;
+}
+.vyz-secondary-info-1, .vyz-secondary-info-2{
+    max-width: 570px;
+}
+.vyz-secondary-info-1 p, .vyz-secondary-info-2 p{
+    font-size: 24px;
+    line-height: 29px; 
+    color: #303030;    
+}
+footer{
+    margin-top: 230px;
 }
