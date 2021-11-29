@@ -219,13 +219,16 @@ header {
     animation-timing-function: linear;
 }
 .tetrad{
+    position:absolute;
     margin-top: 240px;
     margin-left: 250px;
 }
 .shlyapasir{
+	position:absolute;
     margin-top: 80px;
 }
 .bloodlist{
+	position:absolute;
     margin-top: 280px;
     margin-left: 80px;
 }
