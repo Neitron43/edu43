@@ -665,7 +665,7 @@ footer{
         zoom: 2;
         display: block;
         position: absolute;
-        margin-left: 80%;
+        margin-left: 79%;
         width: 30px;
         height: 20px;
         z-index: 20;
@@ -726,7 +726,7 @@ footer{
         display: block;
         padding-top: 35px;
         margin: 0 auto;
-        height: 32%;
+        height: 50%;
         width: 75%;
         border-radius: 35px;
     }
