@@ -662,7 +662,7 @@ footer{
         margin-top: 20px;
     }
     .header-nav-burger {
-        zoom: 2;
+        zoom: 1.5;
         display: block;
         position: absolute;
         margin-left: 79%;
