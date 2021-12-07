@@ -652,6 +652,9 @@ footer{
         top: -70px !important;
         zoom: 0.8;
 }
+    .intro-left-info {
+        zoom: 0.7;
+}
     .intro-secondary-info-behindtext{
         zoom: 0.7;
     }
