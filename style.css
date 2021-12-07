@@ -647,6 +647,9 @@ footer{
     }
 }
 @media (max-width: 769px) {
+    .intro {
+        zoom: 0.8;
+}
     .intro-secondary-info-behindtext{
         zoom: 0.7;
     }
