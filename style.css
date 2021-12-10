@@ -95,6 +95,7 @@ header {
 .header-nav-logo-img {
     width: 70px;
     height: 70px;
+
 }
 .header-nav-navigation ul{
     display: flex;
@@ -235,17 +236,9 @@ header {
     margin-top: 280px;
     margin-left: 80px;
 }
-
-/*
-@keyframes kachalka {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform:rotate(15deg);
-    }
+.intro-picture-adaptive {
+    display: none;
 }
-*/
 .intro-secondary-info {
     margin-top: 195px;
     margin-bottom: 190px;
@@ -273,7 +266,7 @@ header {
     font-weight: 800;
     font-size: 144px;
     line-height: 115.68%;
-    opacity: 0.05;
+    opacity: 0.1;
 }
 .button-01 {
     transition: 0.5s;
@@ -500,15 +493,23 @@ header {
     line-height: 22px;
     color: #D0D0D0;
 }
+
+
 .vyz-main-block {
     display: flex;
     flex-direction: row;
     margin-top: 25px;
+    flex-wrap: wrap;
 }
-
+.vyz-main-block-img{
+    max-width: 570px;
+    margin-right: 30px;
+}
+.vyz-main-block-img img {
+    width: 100%;
+}
 .vyz-main-block-text{
-    margin-left: 30px;
-
+    max-width: 570px;
 }
 .vyz-main-block-text p{
     font-weight: normal;
@@ -520,12 +521,9 @@ header {
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    max-width: 540px;
 }
 .vyz-main-block-text-info-box {
     display: flex;
-    width: 232px;
-    height: 78px;
     align-items: center;
     margin-right: 25px;
 }
@@ -572,10 +570,12 @@ header {
 }
 .vyz-secondary-info{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 40px;
 }
 .vyz-secondary-info-1{
     margin-right: 30px;
+    margin-bottom: 20px;
 }
 .vyz-secondary-info-1, .vyz-secondary-info-2{
     max-width: 570px;
@@ -628,8 +628,25 @@ footer{
     }
 }
 @media (max-width: 1080px) {
-    .intro-picture {
-       display: none;
+    .intro-picture{
+       display: none !important;
+    }
+    .intro-picture-adaptive {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+    .hat-adaptive{
+        position: absolute;
+        left: auto;
+        right: 0;
+        margin-top: 37vh;
+    }
+    .leaf-adaptive {
+        position: absolute;
+        left: auto;
+        right: 0;
+        margin-top: 53vh;
     }
 }
 @media (max-width: 1000px) {
@@ -639,25 +656,85 @@ footer{
 }
 
 @media (max-width: 1210px) {
+    .vyz-secondary-info-1{
+        margin-bottom: 20px;
+    }
     .wrapper {
-        margin: 0px 25px;
+        margin: 0px 15px;
     }
     
 }
 @media (max-width: 665px) {
+    .vyz-main-block-text p{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .vyz-main-block-img{
+        margin-right: 0px;
+    }
     .intro-secondary-info-behindtext{
-        display: none;
+        overflow: hidden;
+    }
+    .vyz-main-block-text-info {
+        zoom: 0.8;   
+    }
+    .vyz-main-block-text-info-box {
+        width: 34%;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 400px) {
+    .intro-secondary-info-behindtext{
+        margin-top: -450px;
+    }
+    .vyz-secondary {
+        margin-top: 50px;
     }
 }
 @media (max-width: 769px) {
-    .intro {
-        margin-top: -100px !important;
-        top: -70px !important;
-        zoom: 0.8;
-}
+    .footer-logo {
+        
+        margin-top: -150px;
+        margin-bottom: 100px;
+    }
     .intro-left-info {
+        max-width: 285px;
+    }
+    .intro-left-info-block {
+        flex-direction: column;
+        
+    }
+    .intro {
+        margin-top: -110px !important;
         zoom: 0.85;
 }
+    .intro-left-info {
+        zoom: 0.90;
+}
+    .intro-left-text h3{
+        font-size: 18px;
+        line-height: 27px;
+        /* identical to box height */
+        
+        
+        /* Header */
+        
+        color: #303030;
+        
+    }
+    .intro-left-text h1{
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 39px;
+        
+        /* Header */
+        
+        color: #303030;
+    }
+    .intro-left-button{
+        zoom: 1.1;
+    }
     .intro-secondary-info-behindtext{
         zoom: 0.7;
     }
@@ -665,18 +742,28 @@ footer{
         justify-items: center;
         grid-template-columns: 1fr;
     }
-    .vyz-main-block {
-        flex-direction: column;
-    }
     .vyz-main-block-text {
-        width: 100%;
         margin-top: 20px;
     }
+    .vyz-secondary-header h2{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 44px;
+        
+        /* Header */
+        
+        color: #303030;
+        
+    }
+    .header-nav-logo {
+        zoom: 0.8;
+    }
     .header-nav-burger {
-        zoom: 1.5;
+        zoom: 1.2;
         display: block;
         position: absolute;
-        margin-left: 79%;
+        right: 0;
+        margin-right: 7%;
         width: 30px;
         height: 20px;
         z-index: 20;
@@ -687,8 +774,9 @@ footer{
         background-color: #303030;
         left: 0;
         width: 100%;
-        height: 2px;
-        top: 9px;
+        height: 3.5px;
+        border-radius: 3px;
+        top: 8px;
         transition: 0.6s;
     }
     .header-nav-burger:before,
@@ -697,7 +785,8 @@ footer{
         background-color: #303030;
         position: absolute;
         width: 100%;
-        height: 2px;
+        height: 3px;
+        border-radius: 3px;
         left: 0;
         transition: 0.6s ;
     }
@@ -746,5 +835,8 @@ footer{
         justify-content: center;
         align-items: center;
         padding-bottom: 28px;
+    }
+    .intro-secondary-info-maintext p{
+        font-size: 22px;
     }
 }
