@@ -238,6 +238,7 @@ header {
 }
 .intro-picture-adaptive {
     display: none;
+    z-index: -99;
 }
 .intro-secondary-info {
     margin-top: 195px;
@@ -660,7 +661,7 @@ footer{
         margin-bottom: 20px;
     }
     .wrapper {
-        margin: 0px 15px;
+        margin: 0px 10px;
     }
     
 }
@@ -679,7 +680,7 @@ footer{
         zoom: 0.8;   
     }
     .vyz-main-block-text-info-box {
-        width: 34%;
+        width: 30%;
         flex-direction: column;
         margin-bottom: 20px;
     }
@@ -693,6 +694,10 @@ footer{
     }
 }
 @media (max-width: 769px) {
+    .vyz-secondary-info-1 p, .vyz-secondary-info-2 p{
+        font-size: 18px;
+        line-height: 22px;   
+    }
     .footer-logo {
         
         margin-top: -150px;
@@ -838,5 +843,14 @@ footer{
     }
     .intro-secondary-info-maintext p{
         font-size: 22px;
+    }
+    .education-header h2{
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .education-filter-high p, .education-filter-medium p{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
     }
 }
